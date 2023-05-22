@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Cantarell', sans-serif;
+}
+/* NAVBAR CSS START */
+#navbar{
+    /* background-image: linear-gradient(to right, #A8d0e6 , #374785); */
+    background-color: #0b0c1000 ;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#navbar.scrolled{
+    background-color: #66FCF1 ;
+    opacity: 0.9;
+    color: #0b0c10;
+    box-shadow: 0px 0px 5px 1px #1f2833;
+}
+
+.nav-list{
+    /* background-color: antiquewhite; */
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+    
+}
+.nav-list li{
+    /* border: 1px solid rgba(255, 255, 255); */
+    border-radius:5px;
+    padding: 10px 25px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: #66fcf2bb;
+}
+
+#navbar.scrolled .nav-list li a{
+    color: #0b0c10;
+}
+
+.nav-list li:hover{
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: all 0.1s;
+}
+.nav-list li:hover a{
+    color: #ffffff;
+}
+/* WELCOME SECTION START */
+#welcome-section{
+    background-color:#1f2833 ;
+    color: #66fcf1;
+    padding: 20% 25%;
+    text-align: center;
+    display: grid;
+    gap: 15px;
+}
+#welcome-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    gap: 7px;
+}
+#welcome-title-name{
+    color: #c5c6c7;
+    font-size: 30px;
+}
+@media screen and (min-width: 890px) {
+    #welcome-section{
+        padding: 10% 25%;
+    }
+    #welcome-title-name{
+        color: #c5c6c7;
+    }
+  }
+/* ABOUT CSS */
+#about-section{
+    background-color: #0b0c10 ;
+    color:  #66fcf1;
+    padding: 8% 15%;
+    display: grid;
+    gap: 30px;
+}
+#desc-about-section{
+    text-align: justify;
+}
+#desc-about-section h1{
+    padding-bottom: 20px;
+}
+#desc-about-section p{
+    padding-top: 20px;
+}
+#image-about-section{
+    background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/man-coder-developed-code-in-computer-6818031-5625514.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
+@media screen and (min-width: 890px) {
+    #about-section {
+        padding: 5% 15%;
+        display: flex;
+    }
+    #desc-about-section{
+        width: 50%;
+    }
+    #image-about-section{
+        background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/man-coder-developed-code-in-computer-6818031-5625514.png");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        width: 50%;
+    }
+  }
+/* SKILL SECTION CSS */
+#skill-section{
+    background-color: #66FCF1;
+    padding:  8% 15%; 
+    text-align: center;  
+}
+#skill-section h1{
+    font-size: 30px;
+    padding-bottom: 35px;
+    color: #1f2833;
+}
+#skill-section hr{
+    border:1px  solid black;
+}
+#skill-section-box{
+    padding: 25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+#skill-image{
+    height: 150px;
+    width: 150px;
+}
+#skill-image:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+@media screen and (min-width: 890px) {
+    #skill-section{
+        padding: 3% 20%; 
+    }
+    #skill-section-box{
+        padding: 25px 40px;
+    }
+}
