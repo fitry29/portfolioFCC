@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
@@ -18,9 +19,9 @@
     <nav id="navbar" class="nav">
         <ul class="nav-list">
             <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#skill-section">Skills</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <!-- END NAVBAR -->
@@ -63,15 +64,61 @@
             <a href="https://www.w3schools.com/php" target="_blank"><img src="https://img.icons8.com/?size=512&id=fAMVO_fuoOuC&format=png" alt="php" id="skill-image"></a>
             <a href="https://www.w3schools.com/mysql" target="_blank"><img src="https://img.icons8.com/?size=512&id=qGUfLiYi1bRN&format=png" alt="mysql" id="skill-image"></a>
             <a href="https://www.w3schools.com/java/" target="_blank"><img src="https://img.icons8.com/?size=512&id=Pd2x9GWu9ovX&format=png" alt="java" id="skill-image"></a>
+            <a href="https://www.w3schools.com/java/" target="_blank"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="git" id="skill-image"></a>
         </div>
     </section>
     <!-- START PROJECT SECTION -->
     <section id="projects" class="projects-section">
-        <div class="project-tile">
-            PROJECT
+        <h1>Project</h1>
+        <div id="project-grid-box">
+                <a href="https://fitry29.github.io/TributePageFCC/" target="_blank" class="project-tile">
+                    <img src="assets/tribute-page.png" alt="" id="project-image">
+                    Tribute Page
+                </a>
+                <a href="https://fitry29.github.io/SurveyForm/" target="_blank" class="project-tile">
+                    <img src="assets/survey-form.png" alt="" id="project-image">
+                    Survey Form
+                </a>
+                <a href="https://fitry29.github.io/LandingPageFCC/" target="_blank" class="project-tile">
+                    <img src="assets/landing-page.png" alt="" id="project-image">
+                    Landing Page
+                </a>
+                <a href="https://fitry29.github.io/TechnicalDocPageFCC/" target="_blank" class="project-tile">
+                    <img src="assets/technical-doc.png" alt="" id="project-image">
+                    Technical Documentation
+                </a>
         </div>
     </section>
     <!-- END PROEJCT SECTION -->
+    <!-- START CONTACT SECTION -->
+    <section id="contact">
+        <div id="contact-title">
+            <h1>Let's work together...</h1>
+            <p>How do you take your coffee?</p>
+        </div>
+        <div id="contact-box">
+            <a href="" target= "_blank" id="profile-link">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+               <p>Facebook</p> 
+            </a>
+            <a href="" target= "_blank" id="profile-link">
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <p>GitHub</p>
+            </a>
+            <a href="" target= "_blank" id="profile-link">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <p>Twitter</p>
+            </a>
+            <a href="" target= "_blank" id="profile-link">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>Send a mail</p>
+            </a>
+        </div>
+    </section>
+    <!-- END CONTACT SECTION -->
+    <footer>
+        Code by Ftry
+    </footer>
     <script>scrollNavbar()</script>
 </body>
 </html>
